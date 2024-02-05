@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 80%;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#header{
+  background: #012055;
+  padding: 10px;
+}
+.header{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.header-nav a{
+font-size: 24px;
+font-weight: 700;
+color: white;
+margin-left: 30px;
+}
+.search input{
+  padding:  10px 30px;
+  outline: none;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.search button{
+  padding:  10px 30px;
+  outline: none;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+#popular{
+  padding: 50px 0;
+}
+.popular{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.movieCard{
+  width: 260px;
+  height: 450px;
+  border: 2px solid black;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+text-align: center;
+border-radius: 15px;
+cursor: pointer;
+}
+.movieCard img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.movieCard:hover{
+  scale: 1.1;
+  background: yellowgreen;
+  transition: 2s;
+}
+.pogination button{
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background: #000;
+}
+.pogination{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  margin-top: 30px;
+}
+#top{
+  padding: 50px 0;
+}
+.top{
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.topcard{
+  width: 260px;
+  height: 450px;
+  border: 2px solid black;
+display: flex;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+text-align: center;
+border-radius: 15px;
+cursor: pointer;
+}
+.topcard img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.topcard:hover{
+  scale: 1.1;
+  background: yellowgreen;
+  transition: 2s;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
