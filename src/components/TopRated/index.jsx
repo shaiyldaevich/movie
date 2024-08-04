@@ -1,23 +1,26 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { API_KEY } from '../../API';
 import TopCard from '../TopCard';
+import { languageContext } from '../../context';
 
 const TopRated = () => {
     const [top,setTop]=useState([])
     const [pogination,setPogination]=useState(1)
+    const {language,dark }=useContext(languageContext)
 function getTop(key){
-    axios(`https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=en-US&page=${pogination}`).then((res)=>{
+    axios(`https://api.themoviedb.org/3/movie/top_rated?api_key=${key}&language=${language}&page=${pogination}`).then((res)=>{
         setTop(res.data.results)
 })
 }
 useEffect(()=>{
 getTop(API_KEY)
-},[pogination])
+},[pogination,language])
     return (
-        <div id='top'>
+        <div id='top'style={{
+            background:dark?"black":'white'
+        }}>
             <div className="container">
-                <h1>popular</h1>
                 <div className="top">
 {
     top.map((el)=>(<TopCard el={el}/>))

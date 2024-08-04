@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 130px;
+   
+}
+#dropdown-basic-button{
+    background: none;
+    color: rgb(251, 251, 251);
+    border: none;
+}
+#hero{
+    background: rgba(0, 0, 0, 0.165);
+    
+}

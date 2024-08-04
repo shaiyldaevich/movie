@@ -1,0 +1,56 @@
+#actordet{
+    width: 100%;
+    height: auto;
+    
+background: #a3ba70;
+padding: 30px;
+}
+.actordet{
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+.actordet img{
+    width: 300;
+    height: 450px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+.act-nav{
+    display: flex;
+    align-items: safe;
+    justify-content: center;
+    flex-direction: column  ;
+    gap: 20px;
+    margin-top: 80px;
+    /* background: #0000001a; */
+}
+.also {
+}
+.know{
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+    gap: 60px;
+    overflow-x: scroll;
+}
+.know::-webkit-scrollbar{
+    /* display: none; */
+    background:grey;
+    height: 2px;
+}
+.knowblock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.knowblock img {
+    border-radius:15px;
+    width: 200px;
+    height: 300px;
+    border:1px solid black;
+}

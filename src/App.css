@@ -1,30 +1,59 @@
+@import url('./components/styles/details.css');
+@import url('./components/styles/actor.css');
+@import url('./components/styles/home.css');
+@import url('./components/styles/hero.css');
+@import url('./components/styles/search.css');
+@import url('./components/styles/fav.css');
 *{
   margin: 0;
   padding: 0;
 }
-a{
+body{
+  /* background: url('./img/bg.jpg') no-repeat center/cover; */
+  /* background: linear-gradient(200deg,rgba(240, 116, 84, 0.605) , rgb(92, 180, 92),rgba(38, 75, 163, 0.89),rgb(20, 129, 123)); */
+
+}
+
+a {
   text-decoration: none;
 }
 .container{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
+html{
+  scroll-behavior: smooth;
+}
 #header{
-  background: #012055;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9999;
+  background: #00000055;
   padding: 10px;
+  
 }
 .header{
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 30px 0;
+
 }
-.header-nav a{
-font-size: 24px;
+.header-nav a {
+font-size: 28px;
 font-weight: 700;
 color: white;
-margin-left: 30px;
+margin-left: 20px;
+text-decoration: none;
 }
+select{
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+
 .search input{
   padding:  10px 30px;
   outline: none;
@@ -41,6 +70,7 @@ margin-left: 30px;
   padding: 50px 0;
 }
 .popular{
+  
   display: flex;
   align-items: start;
   flex-wrap: wrap;
@@ -48,7 +78,7 @@ margin-left: 30px;
   justify-content: center;
 }
 .movieCard{
-  width: 260px;
+  width: 220px;
   height: 450px;
   border: 2px solid black;
 display: flex;
@@ -58,13 +88,14 @@ gap: 10px;
 text-align: center;
 border-radius: 15px;
 cursor: pointer;
+background: white;
 }
-.movieCard img{
+.movieCard a{
   width: 100%;
   height: 80%;
   object-fit: cover;
   border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  border-top-left-radius: 12px; 
 }
 .movieCard:hover{
   scale: 1.1;
@@ -97,7 +128,7 @@ cursor: pointer;
 }
 .topcard{
   width: 260px;
-  height: 450px;
+  height: 500px;
   border: 2px solid black;
 display: flex;
 align-items: center;
@@ -106,6 +137,7 @@ gap: 10px;
 text-align: center;
 border-radius: 15px;
 cursor: pointer;
+background: white;
 }
 .topcard img{
   width: 100%;
